@@ -14,6 +14,7 @@ using namespace std;
 #include "MonsterCharacter.h"
 #include "Skill.h"
 #include "DataTable.h"
+#include "Battle.h"
 
 
 #define PlayerTable dataTable->GetPlayerCharacterTable()

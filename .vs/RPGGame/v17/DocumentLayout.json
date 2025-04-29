@@ -3,48 +3,68 @@
   "WorkspaceRootPath": "C:\\ahnga3\\Github\\RPGGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\DataTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Battle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Battle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\PlayerCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\PlayerCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\DataTable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\DataTable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\PlayerCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\PlayerCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\MonsterCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\MonsterCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\RPGGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\RPGGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Skill.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Skill.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\DataTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\PlayerCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\PlayerCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11BD625E-4CD0-460B-B907-A175886854B7}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Skill.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\Skill.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\PlayerCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\PlayerCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\MonsterCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4C644BC-92AC-4C4B-BDED-888178850E55}|RPGGame\\RPGGame.vcxproj|solutionrelative:RPGGame\\MonsterCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RPGGame\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RPGGame\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RPGGame\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,43 +74,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DataTable.cpp",
-              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.cpp",
-              "RelativeDocumentMoniker": "RPGGame\\DataTable.cpp",
-              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.cpp",
-              "RelativeToolTip": "RPGGame\\DataTable.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Battle.cpp",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Battle.cpp",
+              "RelativeDocumentMoniker": "RPGGame\\Battle.cpp",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Battle.cpp",
+              "RelativeToolTip": "RPGGame\\Battle.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T03:53:26.087Z",
+              "WhenOpened": "2025-04-29T08:40:15.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataTable.h",
-              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.h",
-              "RelativeDocumentMoniker": "RPGGame\\DataTable.h",
-              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.h",
-              "RelativeToolTip": "RPGGame\\DataTable.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "MonsterCharacter.h",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\MonsterCharacter.h",
+              "RelativeDocumentMoniker": "RPGGame\\MonsterCharacter.h",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\MonsterCharacter.h",
+              "RelativeToolTip": "RPGGame\\MonsterCharacter.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T03:53:39.168Z",
+              "WhenOpened": "2025-04-29T08:11:36.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Battle.h",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Battle.h",
+              "RelativeDocumentMoniker": "RPGGame\\Battle.h",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Battle.h",
+              "RelativeToolTip": "RPGGame\\Battle.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T08:09:56.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RPGGame.cpp",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\RPGGame.cpp",
+              "RelativeDocumentMoniker": "RPGGame\\RPGGame.cpp",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\RPGGame.cpp",
+              "RelativeToolTip": "RPGGame\\RPGGame.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-29T08:09:53.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "PlayerCharacter.h",
               "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\PlayerCharacter.h",
               "RelativeDocumentMoniker": "RPGGame\\PlayerCharacter.h",
               "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\PlayerCharacter.h",
               "RelativeToolTip": "RPGGame\\PlayerCharacter.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-29T03:53:44.143Z",
               "EditorCaption": ""
@@ -98,84 +144,110 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Monster.h",
-              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Monster.h",
-              "RelativeDocumentMoniker": "RPGGame\\Monster.h",
-              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Monster.h",
-              "RelativeToolTip": "RPGGame\\Monster.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T03:53:42.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Framework.h",
               "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Framework.h",
               "RelativeDocumentMoniker": "RPGGame\\Framework.h",
               "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Framework.h",
               "RelativeToolTip": "RPGGame\\Framework.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-29T03:53:41.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Main.cpp",
-              "RelativeDocumentMoniker": "RPGGame\\Main.cpp",
-              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Main.cpp",
-              "RelativeToolTip": "RPGGame\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T03:55:55.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Character.cpp",
               "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Character.cpp",
               "RelativeDocumentMoniker": "RPGGame\\Character.cpp",
               "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Character.cpp",
               "RelativeToolTip": "RPGGame\\Character.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-29T03:53:24.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Skill.h",
-              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Skill.h",
-              "RelativeDocumentMoniker": "RPGGame\\Skill.h",
-              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Skill.h",
-              "RelativeToolTip": "RPGGame\\Skill.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T05:03:27.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "PlayerCharacter.cpp",
               "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\PlayerCharacter.cpp",
               "RelativeDocumentMoniker": "RPGGame\\PlayerCharacter.cpp",
               "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\PlayerCharacter.cpp",
               "RelativeToolTip": "RPGGame\\PlayerCharacter.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-29T05:06:42.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Character.h",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Character.h",
+              "RelativeDocumentMoniker": "RPGGame\\Character.h",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Character.h",
+              "RelativeToolTip": "RPGGame\\Character.h",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAC8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T03:53:40.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataTable.cpp",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.cpp",
+              "RelativeDocumentMoniker": "RPGGame\\DataTable.cpp",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.cpp",
+              "RelativeToolTip": "RPGGame\\DataTable.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-29T03:53:26.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataTable.h",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.h",
+              "RelativeDocumentMoniker": "RPGGame\\DataTable.h",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\DataTable.h",
+              "RelativeToolTip": "RPGGame\\DataTable.h",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T03:53:39.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MonsterCharacter.cpp",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\MonsterCharacter.cpp",
+              "RelativeDocumentMoniker": "RPGGame\\MonsterCharacter.cpp",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\MonsterCharacter.cpp",
+              "RelativeToolTip": "RPGGame\\MonsterCharacter.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-29T08:30:06.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Skill.h",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Skill.h",
+              "RelativeDocumentMoniker": "RPGGame\\Skill.h",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Skill.h",
+              "RelativeToolTip": "RPGGame\\Skill.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T05:03:27.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Monster.cpp",
               "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Monster.cpp",
               "RelativeDocumentMoniker": "RPGGame\\Monster.cpp",
@@ -183,21 +255,31 @@
               "RelativeToolTip": "RPGGame\\Monster.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T03:54:48.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T03:54:48.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Character.h",
-              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Character.h",
-              "RelativeDocumentMoniker": "RPGGame\\Character.h",
-              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Character.h",
-              "RelativeToolTip": "RPGGame\\Character.h",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Main.cpp",
+              "RelativeDocumentMoniker": "RPGGame\\Main.cpp",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Main.cpp",
+              "RelativeToolTip": "RPGGame\\Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-29T03:55:55.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Monster.h",
+              "DocumentMoniker": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Monster.h",
+              "RelativeDocumentMoniker": "RPGGame\\Monster.h",
+              "ToolTip": "C:\\ahnga3\\Github\\RPGGame\\RPGGame\\Monster.h",
+              "RelativeToolTip": "RPGGame\\Monster.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T03:53:40.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T03:53:42.367Z"
             }
           ]
         }

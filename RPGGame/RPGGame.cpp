@@ -12,8 +12,7 @@ int main()
 	cout << MonsterTable["오크"].GetAttackPoint() << endl;
 	cout << SkillTable["가로베기"].GetName() << endl;
 
-
-	PlayerCharacter pc = PlayerTable["전사"];
+	Character pc = PlayerTable["전사"];
 
 	cout << pc.GetName();
 

@@ -1,3 +1,6 @@
-C:\RPGGame\RPGGame\Character.cpp;C:\RPGGame\RPGGame\x64\Debug\Character.obj
-C:\RPGGame\RPGGame\DataTable.cpp;C:\RPGGame\RPGGame\x64\Debug\DataTable.obj
-C:\RPGGame\RPGGame\RPGGame.cpp;C:\RPGGame\RPGGame\x64\Debug\RPGGame.obj
+C:\ahnga3\Github\RPGGame\RPGGame\Battle.cpp;C:\ahnga3\Github\RPGGame\RPGGame\x64\Debug\Battle.obj
+C:\ahnga3\Github\RPGGame\RPGGame\Character.cpp;C:\ahnga3\Github\RPGGame\RPGGame\x64\Debug\Character.obj
+C:\ahnga3\Github\RPGGame\RPGGame\DataTable.cpp;C:\ahnga3\Github\RPGGame\RPGGame\x64\Debug\DataTable.obj
+C:\ahnga3\Github\RPGGame\RPGGame\MonsterCharacter.cpp;C:\ahnga3\Github\RPGGame\RPGGame\x64\Debug\MonsterCharacter.obj
+C:\ahnga3\Github\RPGGame\RPGGame\PlayerCharacter.cpp;C:\ahnga3\Github\RPGGame\RPGGame\x64\Debug\PlayerCharacter.obj
+C:\ahnga3\Github\RPGGame\RPGGame\RPGGame.cpp;C:\ahnga3\Github\RPGGame\RPGGame\x64\Debug\RPGGame.obj

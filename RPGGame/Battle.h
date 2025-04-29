@@ -8,8 +8,7 @@ public:
 		this->playerSide = ps;
 		this->monsterSide = ms;
 	}
-
-	
+	void Fight();
 
 
 private:

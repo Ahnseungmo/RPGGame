@@ -30,9 +30,14 @@ public:
 	void SetSpeedPoint(int speedPoint) { this->speedPoint = speedPoint; }
 	vector<string> GetSkills() { return skills; }
 	void AddSkills(string name) {skills.push_back(name);}
+	int GetCharType() { return charType; }
+	void SetCharType(int charType) { this->charType = charType; }
 
 	void Hit();
 	void attack();
+
+	template <typename T>
+	void TurnStart(vector<T>& side);
 
 private:
 	string name;
@@ -42,6 +47,6 @@ private:
 	int maxManaPoint;
 	int attackPoint;
 	int speedPoint;
-
+	int charType;
 	vector<string> skills;
 };
