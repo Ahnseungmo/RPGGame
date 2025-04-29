@@ -1,81 +1,119 @@
-#include "Framework.h"
 #include "DataTable.h"
+DataTable* DataTable::instance = nullptr;
+DataTable* dataTable = DataTable::get();
 
-unordered_map<string, Character> DataTable::ReadCharacterData(string path)
+void DataTable::LoadPlayerData(string playerCharacterPath)
 {
-	unordered_map<string, Character> CharData;
-	Character data;
 	fstream fs;
-	fs.open(path, ios::in);
 	string buff;
+	PlayerCharacter playerData;
+
+	fs.open(playerCharacterPath, ios::in);
 	getline(fs, buff);
-	while (getline(fs, buff)) {
+	while (getline(fs, buff)){
 		stringstream ss(buff);
-		ss.clear();
-		for (int i = 0; getline(ss, buff, ','); i++) {
-			switch (i) {
+		for (int i = 0;getline(ss, buff, ',');i++) {
+			switch (i)
+			{
 			case CHARACTERNAME:
-				data.SetName(buff);
+				playerData.SetName(buff);
 				break;
 			case HEALTHPOINT:
-				data.SetHealthPoint(stoi(buff));
-				data.SetMaxHealthPoint(stoi(buff));
+				playerData.SetHealthPoint(stoi(buff));
+				playerData.SetMaxHealthPoint(stoi(buff));
 				break;
 			case MANAPOINT:
-				data.SetManaPoint(stoi(buff));
-				data.SetMaxManaPoint(stoi(buff));
+				playerData.SetManaPoint(stoi(buff));
+				playerData.SetMaxManaPoint(stoi(buff));
 				break;
 			case ATTACKPOINT:
-				data.SetAttackPoint(stoi(buff));
+				playerData.SetAttackPoint(stoi(buff));
 				break;
 			case SPEEDPOINT:
-				data.SetSpeedPoint(stoi(buff));
+				playerData.SetSpeedPoint(stoi(buff));
 				break;
-			default:				
-				data.AddSkill(buff,GetSkill()[buff]);
+			default:
+				playerData.AddSkills(buff);
 				break;
 			}
 		}
-		CharData.insert({ data.GetName(), data });
+		AddPlayerCharacterTable(playerData.GetName(),playerData);
 	}
-	return CharData;
+
 }
 
-unordered_map<string, Skill> DataTable::ReadSkillData(string path)
+void DataTable::LoadMonsterData(string monsterCharacterPath)
 {
-	unordered_map<string, Skill> SkillData;
-	Skill data;
 	fstream fs;
-	fs.open(path, ios::in);
 	string buff;
+	MonsterCharacter monsterData;
+
+	fs.open(monsterCharacterPath, ios::in);
 	getline(fs, buff);
 	while (getline(fs, buff)) {
 		stringstream ss(buff);
-		ss.clear();
-		for (int i = 0; getline(ss, buff, ','); i++) {
-			switch (i) {
-			case SKILLNAME:
-				data.SetName(buff);
+		for (int i = 0;getline(ss, buff, ',');i++) {
+			switch (i)
+			{
+			case CHARACTERNAME:
+				monsterData.SetName(buff);
 				break;
-			case ATTACKPOWER:
-				data.SetAttackPower(stoi(buff));
+			case HEALTHPOINT:
+				monsterData.SetHealthPoint(stoi(buff));
+				monsterData.SetMaxHealthPoint(stoi(buff));
 				break;
-			case USEMANA:
-				data.SetUseMana(stoi(buff));
+			case MANAPOINT:
+				monsterData.SetManaPoint(stoi(buff));
+				monsterData.SetMaxManaPoint(stoi(buff));
 				break;
-			case AREAATTACK:
-				data.SetAreaAttack(stoi(buff));
+			case ATTACKPOINT:
+				monsterData.SetAttackPoint(stoi(buff));
 				break;
-			case BONUSATTACK:
-				data.SetBonusAttack(stoi(buff));
+			case SPEEDPOINT:
+				monsterData.SetSpeedPoint(stoi(buff));
 				break;
-			case CRITICALATTACK:
-				data.SetCriticalAttack(stoi(buff));
+			default:
+				monsterData.AddSkills(buff);
 				break;
 			}
 		}
-		SkillData.insert({ data.GetName(), data });
+		AddMonsterCharacterTable(monsterData.GetName(), monsterData);
 	}
-	return SkillData;
+}
 
+void DataTable::LoadSkillData(string skillPath)
+{
+	fstream fs;
+	string buff;
+	Skill skillData;
+
+	fs.open(skillPath, ios::in);
+	getline(fs, buff);
+	while (getline(fs, buff)) {
+		stringstream ss(buff);
+		for (int i = 0;getline(ss, buff, ',');i++) {
+			switch (i)
+			{
+			case SKILLNAME:
+				skillData.SetName(buff);
+				break;
+			case ATTACKPOWER:
+				skillData.SetPower(stof(buff));
+				break;
+			case USEMANA:
+				skillData.SetUseMana(stoi(buff));
+				break;
+			case AREAATTACK:
+				skillData.SetAreaAttack(stoi(buff));
+				break;
+			case BONUSATTACK:
+				skillData.SetBonusAttack(stoi(buff));
+				break;
+			case CRITICALATTACK:
+				skillData.SetCriticalAttack(stoi(buff));
+				break;
+			}
+		}
+		AddSkillTable(skillData.GetName(), skillData);
+	}
 }

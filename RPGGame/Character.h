@@ -1,37 +1,38 @@
 #pragma once
+
 #include "Framework.h"
 
 
-class Character
-{
+class Character {
 public:
-	Character() {}
-	Character(string name, int maxHealthPoint, int maxManaPoint, int attackPoint, int speedPoint);
-	~Character(){}
 
-	void SetName(string name) { this->name = name; }
+	Character() {};
+
+	Character(string name, int healthPoint, int maxHealthPoint, int manaPoint,
+		int maxManaPoint, int attackPoint, int speedPoint)
+		: name(name), healthPoint(healthPoint), maxHealthPoint(maxHealthPoint),
+		manaPoint(manaPoint), maxManaPoint(maxManaPoint), attackPoint(attackPoint),
+		speedPoint(speedPoint) {}
+
 	string GetName() { return name; }
-	void SetHealthPoint(int healthPoint) { this->healthPoint = healthPoint; }
+	void SetName(string name) { this->name = name; }
 	int GetHealthPoint() { return healthPoint; }
-	void SetMaxHealthPoint(int maxHealthPoint) { this->maxHealthPoint = maxHealthPoint; }
+	void SetHealthPoint(int healthPoint) { this->healthPoint = healthPoint; }
 	int GetMaxHealthPoint() { return maxHealthPoint; }
-	void SetManaPoint(int manaPoint) { this->manaPoint = manaPoint; }
+	void SetMaxHealthPoint(int maxhealthPoint) { this->maxHealthPoint = maxHealthPoint; }
 	int GetManaPoint() { return manaPoint; }
-	void SetMaxManaPoint(int maxManaPoint) { this->maxManaPoint = maxManaPoint; }
+	void SetManaPoint(int manaPoint) { this->manaPoint = manaPoint; }
 	int GetMaxManaPoint() { return maxManaPoint; }
-	void SetAttackPoint(int attackPoint) { this->attackPoint = attackPoint; }
+	void SetMaxManaPoint(int maxManaPoint) { this->maxManaPoint = maxManaPoint; }
 	int GetAttackPoint() { return attackPoint; }
+	void SetAttackPoint(int attackPoint) { this->attackPoint = attackPoint; }
+	int GetSpeedPointt() { return speedPoint; }
 	void SetSpeedPoint(int speedPoint) { this->speedPoint = speedPoint; }
-	int GetSpeedPoint() { return speedPoint; }
-	void SetSkills(unordered_map<string, Skill> skills) { this->skills = skills; }
-	unordered_map<string, Skill> GetSkills() { return skills; }
+	vector<string> GetSkills() { return skills; }
+	void AddSkills(string name) {skills.push_back(name);}
 
-
-	void AddSkill(string skillname, Skill skill) { skills.insert({ skillname, skill }); }
-
-
-	void TurnStart() {}
-	void Print();
+	void Hit();
+	void attack();
 
 private:
 	string name;
@@ -39,9 +40,8 @@ private:
 	int maxHealthPoint;
 	int manaPoint;
 	int maxManaPoint;
-	int speedPoint;
 	int attackPoint;
+	int speedPoint;
 
-	unordered_map<string,Skill> skills;
+	vector<string> skills;
 };
-

@@ -1,20 +1,9 @@
 #pragma once
 #include "Framework.h"
 
-class PlayerCharacter : public Character {
-public:
-	PlayerCharacter(Character character) {
-		this->SetName(character.GetName());
-		this->SetHealthPoint(character.GetHealthPoint());
-		this->SetMaxHealthPoint(character.GetMaxHealthPoint());
-		this->SetManaPoint(character.GetManaPoint());
-		this->SetMaxManaPoint(character.GetMaxManaPoint());
-		this->SetAttackPoint(character.GetAttackPoint());
-		this->SetSpeedPoint(character.GetSpeedPoint());
-		this->SetSkills(character.GetSkills());
-	}
-	PlayerCharacter() {}
-	~PlayerCharacter() {}
+class PlayerCharacter : public Character{
 
-	void TurnStart();
+
+
+
 };

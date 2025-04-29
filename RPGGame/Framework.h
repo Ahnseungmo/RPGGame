@@ -1,20 +1,21 @@
 #pragma once
 
 #include <iostream>
-#include <string>
 #include <vector>
-#include <unordered_set>
+#include <string>
 #include <unordered_map>
 #include <fstream>
 #include <sstream>
-#include <iterator>
 
 using namespace std;
 
-#include "Skill.h"
 #include "Character.h"
 #include "PlayerCharacter.h"
-#include "Monster.h"
+#include "MonsterCharacter.h"
+#include "Skill.h"
 #include "DataTable.h"
 
 
+#define PlayerTable dataTable->GetPlayerCharacterTable()
+#define MonsterTable dataTable->GetMonsterCharacterTable()
+#define SkillTable dataTable->GetSkillTable()

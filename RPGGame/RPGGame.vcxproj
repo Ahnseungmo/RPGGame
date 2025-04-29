@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{11bd625e-4cd0-460b-b907-a175886854b7}</ProjectGuid>
+    <ProjectGuid>{a4c644bc-92ac-4c4b-bded-888178850e55}</ProjectGuid>
     <RootNamespace>RPGGame</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -129,15 +129,14 @@
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="DataTable.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Monster.cpp" />
-    <ClCompile Include="PlayerCharacter.cpp" />
+    <ClCompile Include="RPGGame.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Battle.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="DataTable.h" />
     <ClInclude Include="Framework.h" />
-    <ClInclude Include="Monster.h" />
+    <ClInclude Include="MonsterCharacter.h" />
     <ClInclude Include="PlayerCharacter.h" />
     <ClInclude Include="Skill.h" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 #pragma once
 #include "Framework.h"
-#include "Skill.h"
+
 enum CharacterDataType {
 	CHARACTERNAME = 0,
 	HEALTHPOINT,
@@ -9,7 +9,6 @@ enum CharacterDataType {
 	SPEEDPOINT,
 	DATATYPE_SIZE
 };
-
 enum SkillDataType {
 	SKILLNAME = 0,
 	ATTACKPOWER,
@@ -18,27 +17,36 @@ enum SkillDataType {
 	BONUSATTACK,
 	CRITICALATTACK
 };
-
-//unordered_map<string, Character> ReadCharacterData(string path);
-
 class DataTable {
 public:
-
-	DataTable(string PlayerCharacterPath,string MonsterPath,string SkillPath) {
-		playerCharacter = ReadCharacterData(PlayerCharacterPath);
-		monster = ReadCharacterData(MonsterPath);
-		skill = ReadSkillData(SkillPath);
+//	static DataTable dataTable;
+	static DataTable* get() {
+		if (instance == nullptr) instance = new DataTable();
+		return instance;
 	}
 
-	unordered_map<string, Character> ReadCharacterData(string path);
-	unordered_map<string, Skill> ReadSkillData(string path);
-	
-	unordered_map<string, Character> GetPlayerCharacter() { return playerCharacter; }
-	unordered_map<string, Character> GetMonster() { return monster; }
-	unordered_map<string, Skill> GetSkill() { return skill; };
+	DataTable() {}
+	void LoadPlayerData(string playerCharacterPath);
+	void LoadMonsterData(string monsterCharacterPath);
+	void LoadSkillData(string skillPath);
+
+	unordered_map<string, PlayerCharacter> GetPlayerCharacterTable() { return playerCharacterTable; };
+	void AddPlayerCharacterTable(string name, PlayerCharacter playerCharacter) { this->playerCharacterTable.insert({ name,playerCharacter }); }
+
+	unordered_map<string, MonsterCharacter> GetMonsterCharacterTable() { return monsterCharacterTable; };
+	void AddMonsterCharacterTable(string name, MonsterCharacter monsterCharacter) { this->monsterCharacterTable.insert({ name,monsterCharacter }); }
+
+	unordered_map<string, Skill> GetSkillTable() { return skillTable; };
+	void AddSkillTable(string name, Skill skillTable) { this->skillTable.insert({ name,skillTable }); }
 
 private:
-	unordered_map<string, Character> playerCharacter;
-	unordered_map<string, Character> monster;
-	unordered_map<string, Skill> skill;
+	static DataTable* instance;
+	unordered_map<string, PlayerCharacter> playerCharacterTable;
+	unordered_map<string, MonsterCharacter> monsterCharacterTable;
+	unordered_map<string, Skill> skillTable;
+
+
+
 };
+
+
