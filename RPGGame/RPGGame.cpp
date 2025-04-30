@@ -1,21 +1,131 @@
-ï»¿#include "Framework.h"
+#include "Framework.h" // ¸ğµç ÇÊ¿äÇÑ Çì´õ Æ÷ÇÔ
+#include <iostream>    // cout, cerr »ç¿ë
+#include <vector>      // vector »ç¿ë
+#include <string>      // string »ç¿ë
+#include <cstdlib>     // srand »ç¿ë
+#include <ctime>       // time »ç¿ë
+#include <stdexcept>   // ¿¹¿Ü Ã³¸® »ç¿ë
+#include <memory>      // unique_ptr »ç¿ë
+#include <vector>      // vector »ç¿ë
 
+// --- ÇÔ¼ö ¼±¾ğ ---
 
-int main()
+// °ÔÀÓ µ¥ÀÌÅÍ ·Îµù ÇÔ¼ö
+void LoadGameData(DataTable& dataTable);
+
+// ÆÄÆ¼ »ı¼º ÅÛÇÃ¸´ ÇÔ¼ö
+template <typename CharType, typename TemplateType>
+std::vector<std::unique_ptr<CharType>> CreateParty(
+    DataTable& dataTable,
+    const std::vector<std::string>& characterNames,
+    const TemplateType* (DataTable::*findFunc)(const std::string&) const);
+
+// °ÔÀÓ ½ÇÇà ÇÔ¼ö (ÀÎÀÚ·Î ÆÄÆ¼ ÀÌ¸§ ¸ñ·Ï ¹Şµµ·Ï ¼öÁ¤)
+void RunGame(const std::vector<std::string>& playerNamesToCreate,
+             const std::vector<std::string>& monsterNamesToCreate);
+
+// --- main ÇÔ¼ö ---
+
+int main() {
+    // ÇÁ·Î±×·¥ ½ÃÀÛ ½Ã ³­¼ö »ı¼º±â ½Ãµå ÇÑ ¹ø ¼³Á¤
+    srand(static_cast<unsigned int>(time(0)));
+
+    try {
+        // »ı¼ºÇÒ ÇÃ·¹ÀÌ¾î ¹× ¸ó½ºÅÍ ÀÌ¸§ ¸ñ·Ï Á¤ÀÇ
+        const std::vector<std::string> playerNames = {"Àü»ç", "±Ã¼ö", "µµÀû"};
+        const std::vector<std::string> monsterNames = {"¿ÀÅ©", "°íºí¸°", "½½¶óÀÓ"};
+
+        // RunGame ÇÔ¼ö¿¡ ÀÌ¸§ ¸ñ·Ï Àü´Ş
+        RunGame(playerNames, monsterNames);
+
+    } catch (const std::exception& e) {
+        // Ç¥ÁØ ¿¹¿Ü Ã³¸®
+        std::cerr << "\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << std::endl;
+        std::cerr << "¿À·ù ¹ß»ı: " << e.what() << std::endl;
+        std::cerr << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n" << std::endl;
+        std::cout << "\n¿À·ù·Î ÀÎÇØ ÇÁ·Î±×·¥ÀÌ Á¾·áµÇ¾ú½À´Ï´Ù." << std::endl;
+        return 1; // ½ÇÆĞ Ç¥½Ã
+    } catch (...) {
+        // ´Ù¸¥ ¸ğµç ¾Ë ¼ö ¾ø´Â ¿¹¿Ü Ã³¸®
+        std::cerr << "\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << std::endl;
+        std::cerr << "¿¹»óÄ¡ ¸øÇÑ ¿À·ù ¹ß»ı!" << std::endl;
+        std::cerr << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n" << std::endl;
+        std::cout << "\n¾Ë ¼ö ¾ø´Â ¿À·ù·Î ÀÎÇØ ÇÁ·Î±×·¥ÀÌ Á¾·áµÇ¾ú½À´Ï´Ù." << std::endl;
+        return 2; // ½ÇÆĞ Ç¥½Ã
+    }
+
+    std::cout << "\nÇÁ·Î±×·¥ÀÌ ¼º°øÀûÀ¸·Î Á¾·áµÇ¾ú½À´Ï´Ù." << std::endl;
+    return 0; // ¼º°ø Ç¥½Ã
+}
+
+// --- ÇÔ¼ö Á¤ÀÇ ---
+
+// °ÔÀÓ µ¥ÀÌÅÍ ·Îµù ÇÔ¼ö ±¸Çö
+void LoadGameData(DataTable& dataTable) {
+    std::cout << "°ÔÀÓ µ¥ÀÌÅÍ ·Îµù Áß..." << std::endl;
+    // Ä³¸¯ÅÍ°¡ ½ºÅ³ µ¥ÀÌÅÍ¿¡ ÀÇÁ¸ÇÏ¹Ç·Î ½ºÅ³ ¸ÕÀú ·Îµå
+    dataTable.LoadSkillData("Data/SkillTable.csv");
+    dataTable.LoadPlayerData("Data/PlayerTable.csv");
+    dataTable.LoadMonsterData("Data/MonsterTable.csv");
+    std::cout << "µ¥ÀÌÅÍ ·Îµù ¿Ï·á.\n" << std::endl;
+}
+
+// ÆÄÆ¼ »ı¼º ÅÛÇÃ¸´ ÇÔ¼ö ±¸Çö
+template <typename CharType, typename TemplateType>
+std::vector<std::unique_ptr<CharType>> CreateParty(
+    DataTable& dataTable,
+    const std::vector<std::string>& characterNames,
+    const TemplateType* (DataTable::*findFunc)(const std::string&) const)
 {
+    std::vector<std::unique_ptr<CharType>> party;
+    party.reserve(characterNames.size()); // ¹Ì¸® °ø°£ È®º¸
 
-	DataTable* dataTable = DataTable::get();
-	dataTable->LoadPlayerData("PlayerTable.csv");
-	dataTable->LoadMonsterData("MonsterTable.csv");
-	dataTable->LoadSkillData("SkillTable.csv");
-	cout << PlayerTable["ì „ì‚¬"].GetAttackPoint() << endl;
-	cout << MonsterTable["ì˜¤í¬"].GetAttackPoint() << endl;
-	cout << SkillTable["ê°€ë¡œë² ê¸°"].GetName() << endl;
+    // ÆÄÆ¼ Å¸ÀÔ¿¡ µû¶ó Ãâ·Â ¸Ş½ÃÁö º¯°æ
+    std::string partyTypeStr = std::is_same_v<CharType, PlayerCharacter> ? "ÇÃ·¹ÀÌ¾î" : "¸ó½ºÅÍ";
+    std::cout << partyTypeStr << " ÆÄÆ¼ »ı¼º Áß..." << std::endl;
 
-	Character pc = PlayerTable["ì „ì‚¬"];
+    for (const auto& name : characterNames) {
+        const TemplateType* characterTemplate = (dataTable.*findFunc)(name);
+        if (characterTemplate) {
+            // º¹»ç »ı¼ºÀÚ¸¦ »ç¿ëÇÏ¿© unique_ptr »ı¼º ¹× Ãß°¡
+            party.push_back(std::make_unique<CharType>(*characterTemplate));
+            std::cout << "- Ãß°¡µÊ: ";
+            party.back()->PrintStatus(); // Ãß°¡µÈ Ä³¸¯ÅÍ »óÅÂ Ç¥½Ã
+        } else {
+            std::cerr << "°æ°í: Ä³¸¯ÅÍ ÅÛÇÃ¸´ '" << name << "'À»(¸¦) DataTable¿¡¼­ Ã£À» ¼ö ¾ø½À´Ï´Ù." << std::endl;
+        }
+    }
+    std::cout << partyTypeStr << " ÆÄÆ¼ »ı¼º ¿Ï·á.\n" << std::endl;
+    return party; // »ı¼ºµÈ ÆÄÆ¼ ¹İÈ¯ (RVO ¶Ç´Â ÀÌµ¿ ½Ã¸ÇÆ½½º È°¿ë)
+}
 
-	cout << pc.GetName();
+// °ÔÀÓ ½ÇÇà ÇÔ¼ö ±¸Çö (ÀÎÀÚ·Î ¹ŞÀº ÀÌ¸§ ¸ñ·Ï »ç¿ë)
+void RunGame(const std::vector<std::string>& playerNamesToCreate,
+             const std::vector<std::string>& monsterNamesToCreate) {
+    // --- µ¥ÀÌÅÍ ·Îµù ---
+    DataTable& dataTable = DataTable::getInstance();
+    LoadGameData(dataTable);
 
+    // --- ÆÄÆ¼ »ı¼º (ÀÎÀÚ·Î ¹ŞÀº ÀÌ¸§ ¸ñ·Ï »ç¿ë) ---
+    auto playerParty = CreateParty<PlayerCharacter, PlayerCharacter>(
+        dataTable, playerNamesToCreate, &DataTable::TryFindPlayerCharacter);
 
-	return 0;
+    auto monsterParty = CreateParty<MonsterCharacter, MonsterCharacter>(
+        dataTable, monsterNamesToCreate, &DataTable::TryFindMonsterCharacter);
+
+    // --- ÀüÅõ Àü À¯È¿¼º °Ë»ç ---
+    if (playerParty.empty()) {
+        throw std::runtime_error("ÀüÅõ¸¦ ½ÃÀÛÇÒ ¼ö ¾ø½À´Ï´Ù: ÇÃ·¹ÀÌ¾î ÆÄÆ¼°¡ ºñ¾îÀÖ½À´Ï´Ù.");
+    }
+    if (monsterParty.empty()) {
+        throw std::runtime_error("ÀüÅõ¸¦ ½ÃÀÛÇÒ ¼ö ¾ø½À´Ï´Ù: ¸ó½ºÅÍ ÆÄÆ¼°¡ ºñ¾îÀÖ½À´Ï´Ù.");
+    }
+
+    // --- ÀüÅõ ½ÃÀÛ ---
+    // Battle »ı¼ºÀÚ¿¡ unique_ptr º¤ÅÍ¸¦ Á÷Á¢ Àü´Ş
+    Battle battle(playerParty, monsterParty);
+    battle.StartFight(); // ÀüÅõ ½Ã¹Ä·¹ÀÌ¼Ç ½ÇÇà
+
+    // --- ÀüÅõ ÈÄ Á¤¸® ---
+    // unique_ptr ´öºĞ¿¡ º°µµÀÇ Á¤¸® ÄÚµå ºÒÇÊ¿ä
 }
